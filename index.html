@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja</title>
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+    />
+    <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+    ></script>
+    <style>
+        .head {
+            width: 1200px;
+            margin: auto;
+        }
+        .site {
+            display: flex;
+            width: 1200px;
+            margin: auto;
+        }
+        .content {
+            width: 1200px;
+            flex-direction: row;
+        }
+        .sex {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+        .sex-radio {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20%;
+        }
+    </style>
+
+</head>
+<body>
+<div class="head">
+    <h3>Rejestracja</h3>
+</div>
+<div class="site">
+    <form class="content">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputFirstName4">Imię</label>
+                <input
+                        type="text"
+                        class="form-control"
+                        id="inputFirstName4"
+                        placeholder="Wpisz imię"
+                />
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputLastName4">Nazwisko</label>
+                <input
+                        type="text"
+                        class="form-control"
+                        id="inputLastName4"
+                        placeholder="Wpisz nazwisko"
+                />
+            </div>
+        </div>
+        <div class="sex">
+            <div>
+                <p>Płeć</p>
+            </div>
+            <div class="sex-radio">
+                <div class="custom-control custom-radio">
+                    <input
+                            type="radio"
+                            id="customRadio1"
+                            name="customRadio"
+                            class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="customRadio1"
+                    >Kobieta</label
+                    >
+                </div>
+                <div class="custom-control custom-radio">
+                    <input
+                            type="radio"
+                            id="customRadio2"
+                            name="customRadio"
+                            class="custom-control-input"
+                    />
+                    <label class="custom-control-label" for="customRadio2"
+                    >Mężczyzna</label
+                    >
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Adres email</label>
+                <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        placeholder="Wpisz adres email"
+                />
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Hasło</label>
+                <input
+                        type="password"
+                        class="form-control"
+                        id="exampleInputPassword1"
+                        aria-describedby="passwordHelp"
+                        placeholder="Hasło"
+                />
+                <small id="passwordHelp" class="form-text text-muted"
+                >Min. 8 znaków</small
+                >
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">Miasto</label>
+                <input type="text" class="form-control" id="inputCity" />
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">Województwo</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Wybierz...</option>
+                    <option>dolnośląskie</option>
+                    <option>kujawsko-pomorskie</option>
+                    <option>lubelskie</option>
+                    <option>lubuskie</option>
+                    <option>łódzkie</option>
+                    <option>małopolskie</option>
+                    <option>mazowieckie</option>
+                    <option>opolskie</option>
+                    <option>podkarpackie</option>
+                    <option>podlaskie</option>
+                    <option>pomorskie</option>
+                    <option>śląskie</option>
+                    <option>świętokrzyskie</option>
+                    <option>warmińsko-mazurskie</option>
+                    <option>wielkopolskie</option>
+                    <option>zachodniopomorskie</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Kod pocztowy</label>
+                <input type="text" class="form-control" id="inputZip" />
+            </div>
+        </div>
+        <div class="agreement">
+            <div class="custom-control custom-checkbox">
+                <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="customCheck1"
+                />
+                <label class="custom-control-label" for="customCheck1"
+                >Akceptuję <span><a href="">regulamin</a></span></label
+                >
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input
+                        type="checkbox"
+                        class="custom-control-input"
+                        id="customCheck2"
+                        checked="checked"
+                />
+                <label class="custom-control-label" for="customCheck2"
+                >Wyrażam zgodę na otrzymywanie informacji marketingowych</label
+                >
+            </div>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">Rejestruj</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
